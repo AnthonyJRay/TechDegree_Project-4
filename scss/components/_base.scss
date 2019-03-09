@@ -78,7 +78,7 @@ body {
     margin: auto;
 }
 
-input {
+.form__input {
     border-style: none;
     border-bottom: 5px $sea solid;
     width: 75%;
@@ -86,11 +86,11 @@ input {
     padding: 10px;
 }
 
-label {
+.form__label {
     display: none;
 }
 
-.img {
+.img--logo {
     display: flex;
     margin: auto;
   }
