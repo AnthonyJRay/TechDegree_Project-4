@@ -478,11 +478,6 @@ template {
   flex-direction: column;
 }
 
-.img {
-  display: flex;
-  margin: auto;
-}
-
 .grid__row {
   text-align: center;
 }
@@ -501,7 +496,7 @@ a {
   border-radius: 5px;
 }
 .nav__item:hover {
-  background: blue;
+  background: #71eeb8;
 }
 
 .nav {
@@ -513,6 +508,7 @@ a {
 h1 {
   font-family: "Arvo", serif;
   max-width: 90%;
+  color: #71eeb8;
 }
 
 h4 {
@@ -533,11 +529,14 @@ p {
   margin: 2em;
   text-align: left;
 }
+p a.link {
+  color: #4ee2ec;
+}
 
 .blockquote {
   font-style: oblique;
-  font-size: 2em;
-  border-left: 10px black solid;
+  font-size: 1.7em;
+  border-left: 10px #71eeb8 solid;
   border-radius: 5px;
   text-align: left;
   padding-left: 20px;
@@ -547,6 +546,10 @@ button {
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
+  width: 80%;
+  background-color: #4ee2ec;
+  color: white;
+  border-style: none;
 }
 
 #forms {
@@ -556,6 +559,22 @@ button {
 body {
   max-width: 90%;
   margin: auto;
+}
+
+input#username {
+  border-style: none;
+  border-bottom: 5px #71eeb8 solid;
+  width: 75%;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+input#username#password {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+label {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

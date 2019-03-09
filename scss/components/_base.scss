@@ -3,7 +3,7 @@ ul li {
   }
 
   a {
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 .nav__item {
@@ -11,7 +11,7 @@ ul li {
     padding: 10px;
     border-radius: 5px;
 &:hover {
-    background: blue;
+    background: $sea;
 }
 }
 
@@ -24,6 +24,7 @@ ul li {
 h1 {
     font-family: 'Arvo', serif;
     max-width: 90%;
+    color: $sea;
 }
 
 h4 {
@@ -43,12 +44,16 @@ p {
     line-height: 20px;
     margin: 2em;
     text-align: left;
+
+    a.link {
+        color: $default;
+    }
 }
 
 .blockquote {
     font-style: oblique;
-    font-size: 2em;
-    border-left: 10px black solid;
+    font-size: 1.7em;
+    border-left: 10px $sea solid;
     border-radius: 5px;
     text-align: left;
     padding-left: 20px;
@@ -57,7 +62,11 @@ p {
 button {
     margin: 10px;
     padding: 10px;
-    border-radius: 5px
+    border-radius: 5px;
+    width: 80%;
+    background-color: $default;
+    color: white;
+    border-style: none;
 }
 
 #forms { 
@@ -68,3 +77,22 @@ body {
     max-width: 90%;
     margin: auto;
 }
+
+input {
+    border-style: none;
+    border-bottom: 5px $sea solid;
+    width: 75%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+label {
+    display: none;
+}
+
+.img {
+    display: flex;
+    margin: auto;
+  }
+
+
