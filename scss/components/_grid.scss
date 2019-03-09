@@ -73,15 +73,11 @@
   flex-direction: column;
 }
 
-.img__avatar {
+.img {
   display: flex;
   margin: auto;
 }
 
-.container {
-  @include flex-column;
-}
-
-ul {
-  list-style-type: none;
+.grid__row {
+  text-align: center;
 }

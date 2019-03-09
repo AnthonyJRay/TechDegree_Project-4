@@ -1,0 +1,70 @@
+ul li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none !important;
+}
+
+.nav__item {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+&:hover {
+    background: blue;
+}
+}
+
+.nav {
+    padding: 0;
+    margin: 10px;
+    font-family: 'Arvo', serif;
+}
+
+h1 {
+    font-family: 'Arvo', serif;
+    max-width: 90%;
+}
+
+h4 {
+    font-family: 'Arvo', serif;
+}
+
+.headline--secondary {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2em;
+    font-family: 'Arvo', serif;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: .95em;
+    line-height: 20px;
+    margin: 2em;
+    text-align: left;
+}
+
+.blockquote {
+    font-style: oblique;
+    font-size: 2em;
+    border-left: 10px black solid;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px
+}
+
+#forms { 
+    margin-bottom:20px
+}
+
+body {
+    max-width: 90%;
+    margin: auto;
+}
