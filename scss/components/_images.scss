@@ -1,0 +1,17 @@
+.img--logo {
+    display: flex;
+    margin: auto;
+  }
+  
+.img--frame {
+      border: 1px #9999 solid;
+      padding: 13px;
+      max-width: 90%;
+  }
+.img--avatar {
+    @extend %margin;
+}
+
+
+
+///////////////////

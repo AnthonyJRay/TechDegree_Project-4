@@ -1,0 +1,15 @@
+.btn--default {
+    @include btn-theme($default);
+}
+.btn--success {
+    @include btn-theme($success);
+}
+.btn--error {
+    @include btn-theme($error);
+}
+.btn--warning {
+  @include btn-theme($warning);
+}
+.btn--info {
+  @include btn-theme($info);
+}

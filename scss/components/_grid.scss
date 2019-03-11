@@ -14,13 +14,17 @@
   &__row {
     padding: 1em 10px;
     display: block;
+    text-align: center;
     
 
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include break {
+      display: flex;
       flex-direction: row;
-    }
+      justify-content: space-between;
+      align-items: center;
+  }
   }
 
   // .grid__col
@@ -32,13 +36,17 @@
 
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
-      &--#{$i} {
+      &--#{$i}.theme__colors {
 
         // base styles applied to all grid columns 
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
-        margin-top: 10px;
+        @extend %margin;
+        border-radius: 5px;
+        border-style: none;
         flex-basis: 100%;
+        background-color: map-get($grid-colors, $i);
+        
 
         // NOTE: replace with media query mixin if aiming for exceeds
         @media (min-width: $break) {
@@ -68,11 +76,25 @@
   }
 }
 
-.grid__col--12 {
-  display:flex;
-  flex-direction: column;
+.grid__col--8 {
+  @include break {
+    max-width: 68%;
+  }
 }
 
-.grid__row {
-  text-align: center;
+.grid__col--12 {
+  @include break {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+  }
 }
+
+  .grid__col--7.theme__colors {
+  @include break {
+    margin: auto;
+  }
+}
+
+

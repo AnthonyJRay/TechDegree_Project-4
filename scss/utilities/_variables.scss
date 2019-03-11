@@ -1,5 +1,8 @@
 // Break Points
-$break: 481px;
+$break: 768px;
+
+// Max-Width
+$max-w: 90%;
 
 //Base Colors
 $sea: #71eeb8;
@@ -11,3 +14,18 @@ $success: #41A317;
 $error: #C24641;
 $warning: #FF7F50;
 $info: #842DCE;
+
+
+$grid-colors: (
+12 : #6cddbb,
+3 : #d3a4db,
+4 : #40d8ef,
+5 : #85d189,
+7 : #e07f7f,
+8 : #e58e62,
+6 : #109fb5
+);
+
+// Font-Family
+$arvo:'Arvo', serif;
+$quicksand:'Quicksand', sans-serif;

@@ -1,0 +1,11 @@
+.form__input {
+    border-style: none;
+    border-bottom: 5px $sea solid;
+    width: 75%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.form__label--hidden {
+    display: none;
+}

@@ -1,0 +1,20 @@
+.nav {
+    @include break {
+        display: flex;
+        flex-direction: row;
+    }
+    padding: 0px;
+    @extend %margin;
+&__item {
+    @include break {
+        display: flex;
+        flex-direction: row;
+    }
+    @extend %margin;
+    padding: 10px;
+    border-radius: 5px;
+&:hover {
+    background: $sea;
+    }
+  }
+}

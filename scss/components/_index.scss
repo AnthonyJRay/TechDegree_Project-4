@@ -5,6 +5,10 @@
 
 // import the grid component
 @import 'grid';
-@import 'base';
 
 // NOTE: import other components here:
+@import 'forms';
+@import 'navigation';
+@import 'buttons';
+@import 'images';
+@import 'typography';

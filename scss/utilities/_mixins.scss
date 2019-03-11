@@ -2,10 +2,33 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    @content;
 }
 
 @mixin flex-row {
     display: flex;
     flex-direction: row;
     text-align: center;
+    @content;
+}
+
+@mixin btn-theme($btn-color) {
+    background-color: $btn-color;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    color: white;
+    border-style: none;
+    @content;
+}
+
+@mixin max {
+    max-width: $max-w;
+}
+
+@mixin break {
+    @media (min-width: $break) {
+        @content;
+    }
 }
