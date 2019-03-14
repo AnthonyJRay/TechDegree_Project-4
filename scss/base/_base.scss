@@ -4,6 +4,10 @@ ul {
 }
 
 a  {
+    color: #555;
+    &:hover{
+        color: white;
+    }
     @extend %text-dec;
     &.link {
         color: $default;
@@ -13,7 +17,7 @@ a  {
 
 
 .headline--primary {
-
+    margin-right: 35px;
     color: $sea;
 }
 
